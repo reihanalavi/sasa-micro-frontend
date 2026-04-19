@@ -1,0 +1,10 @@
+{
+  "name": "sasa-ecosystem",
+  "private": true,
+  "workspaces": [
+    "catalog-app",
+    "order-app",
+    "shell-app",
+    "shared"
+  ]
+}
