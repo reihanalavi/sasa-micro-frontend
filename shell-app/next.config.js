@@ -4,10 +4,11 @@
  * Pengaturan Module Federation untuk bertindak sebagai Host yang 
  * mengonsumsi ('catalog' & 'order').
  */
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 module.exports = {
-  webpack(config, options) {
+  webpack(config, _options) {
     config.plugins.push(
       new NextFederationPlugin({
         name: 'shell', // Nama unik aplikasi Host

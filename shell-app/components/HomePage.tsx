@@ -87,7 +87,7 @@ export default function HomePage() {
             <div className="rounded-[2.5rem] border border-gray-100 bg-white p-6 shadow-xl shadow-gray-200/50 dark:border-zinc-800 dark:bg-zinc-900/50 dark:shadow-none">
               <RemoteProductList 
                 selectedId={selectedId} 
-                onSelectProduct={(product: any) => setSelectedProduct(product)} 
+                onSelectProduct={(product: Product) => setSelectedProduct(product)} 
               />
             </div>
           </div>

@@ -4,10 +4,11 @@
  * Di sini kita mengonfigurasi aplikasi ini agar bisa bertindak sebagai "Remote"
  * yang mengekspos komponen-komponennya untuk digunakan oleh aplikasi lain (Host).
  */
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 module.exports = {
-  webpack(config, options) {
+  webpack(config, _options) {
     // Kita tambahkan plugin Module Federation ke dalam pipeline Webpack
     config.plugins.push(
       new NextFederationPlugin({

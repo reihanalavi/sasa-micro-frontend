@@ -3,10 +3,11 @@
  * 
  * Konfigurasi untuk mengekspos modul 'OrderDetail' agar bisa dikonsumsi oleh Host.
  */
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 module.exports = {
-  webpack(config, options) {
+  webpack(config, _options) {
     config.plugins.push(
       new NextFederationPlugin({
         name: 'order', // Nama unik aplikasi remote
